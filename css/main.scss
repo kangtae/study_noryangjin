@@ -1,0 +1,39 @@
+%mauto {width: 1200px; margin: 0 auto;}
+@mixin clear() {
+    &:after{content: ""; display: block; clear: both;}
+}
+@mixin robo($w, $s) {
+    font-family: 'Roboto', sans-serif; font-weight: $w; font-size: $s;
+}
+.header {
+    .header_top {
+        @include clear;
+        background: #000; padding: 7px 0;
+        > div {
+        @extend %mauto;
+            .header_info {
+                float: right;
+                .icon {
+                    float: left;
+                    li {
+                        &:last-child {padding-right: 10px;}
+                        float: left; padding-right: 16px;
+                        a {color: #fff;}
+                    }
+                }
+                .login {
+                    float: left;
+                    li {
+                        float: left; padding-left: 16px;
+                        a {@include robo(400, 15px); color: #fff; line-height: 20px;}
+                        button {@include robo(400, 15px); background: transparent; font-size: 15px; line-height: 19px; 
+                            color: #fff; outline: none;}
+                        img {padding-left: 10px;
+                            &:hover {cursor: pointer;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
