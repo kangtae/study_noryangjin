@@ -96,17 +96,15 @@ $gray3: #aaaaaa;
 .main{position: relative;
     .slider {
         a {
-            .banner {float: left;
-                    > img {width: 100%}
-            }
+            .banner {float: left;}
         }
     }
     .bx-controls {
         .bx-controls-direction { 
             > a { top: 50%; transform:translateY(-50%); z-index: 51;
-                &.bx-prev {left: 54px;
+                &.bx-prev {left: 10%;
                 }
-                &.bx-next {right: 54px;
+                &.bx-next {right: 10%;
                 }
             }
         }
@@ -144,10 +142,12 @@ $gray3: #aaaaaa;
         h1 {@include robo(500, 38px, #000); position: absolute; line-height: 28px;
             &:after {@include main_txt_af(160px); left: 0%; transform: translateX(0); }
         }
-        .slider {
+        .slider2 {
             .banner {
-                .img_left {float: left; padding-top: 88px;}
-                .img_right {float: right;}
+                > a { display: block;
+                    &.img_left {float: left; padding-top: 88px;}
+                    &.img_right {float: right; }
+                 }
             }
         }
         .bx-pager {padding-top: 0px; text-align: left; position: absolute; bottom: 0; z-index: 51;}
@@ -166,6 +166,14 @@ $gray3: #aaaaaa;
     }
 }
 
+/* new_item */
+.new_item {
+    .track_slider {
+        > div {background: gray;
+
+        }
+    }
+}
 
 
 /* pager */

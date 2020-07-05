@@ -18,6 +18,10 @@
         <script>
             $(document).ready(function(){
               $('.slider').bxSlider({
+              });
+            });
+            $(document).ready(function(){
+              $('.slider2').bxSlider({
                 mode: 'fade'
               });
             });
@@ -220,29 +224,21 @@
         <section class="md_pick">
             <div class="mauto">
                 <h1>MD PICK</h1>
-                <div class="slider">
+                <div class="slider2">
                     <div class="banner">
                         <a class="img_left" href="#">
-                            <div>
-                                <img src="images/MdPick1_1-2.jpg">
-                            </div>
+                            <img src="images/MdPick1_1-2.jpg">
                         </a>
                         <a class="img_right" href="#">
-                            <div>
-                                <img src="images/MdPick1_1-1.jpg">
-                            </div>
+                            <img src="images/MdPick1_1-1.jpg">
                         </a>
                     </div>
                     <div class="banner">
                         <a class="img_left" href="#">
-                            <div>
-                                <img src="images/MdPick1_2-2.jpg">
-                            </div>
+                            <img src="images/MdPick1_2-2.jpg">
                         </a>
                         <a class="img_right" href="#">
-                            <div>
-                                <img src="images/MdPick1_2-1.jpg">
-                            </div>
+                            <img src="images/MdPick1_2-1.jpg">
                         </a>
                     </div>
                 </div>
@@ -262,5 +258,78 @@
                 </div>
             </div>
         </section>
+        <section class="new_item">
+                <div class="track_slider">
+                    <div class="item_banner1">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner2">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner3">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner4">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner5">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner6">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner7">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner8">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner9">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner10">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner11">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner12">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner13">
+                        <h1>1</h1>
+                    </div>
+                    <div class="item_banner14">
+                        <h1>1</h1>
+                    </div>
+                </div>
+        </section>
+        <script>
+            $('.track_slider').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+                });
+        </script>
     </body>
 </html>
