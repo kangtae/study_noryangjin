@@ -1,3 +1,4 @@
+body {min-width: 1200px;}
 $mgreen: #DCFF21;
 $gray1: #585858;
 $gray2: #7e7e7e;
@@ -116,7 +117,7 @@ $gray3: #aaaaaa;
 
 /* 서브배너1 */
 .best_seller { margin-top: 140px;
-    .mauto {@include mauto; position: relative;
+    .mauto {@include mauto; 
         > h1 {@include robo(500, 38px, #000); @include main_txt;
             &:after {@include main_txt_af(260px)}
         }
@@ -133,8 +134,19 @@ $gray3: #aaaaaa;
                 }
             }
         }
+        .bx-controls {
+            .bx-controls-direction {
+                a {
+                    &.bx-prev {top: 180px;
+                    }
+                    &.bx-next {top: 180px;
+                    }
+                }
+            }
+        }
     }
 }
+.bx-wrapper {position: relative;}
 
 /* 서브배너2 */
 .md_pick {margin-top: 140px;
@@ -179,11 +191,11 @@ $gray3: #aaaaaa;
 /* pager */
 .bx-controls {
     .bx-controls-direction {
-        a { font-size: 0; position: absolute; top: 288px;
-            &.bx-prev {left: -54px;
+        a { font-size: 0; position: absolute; top: 288px; z-index: 60;
+            &.bx-prev {left: 0;
                 &:after {@include arrow("\e93d", 40px);}
             }
-            &.bx-next {right: -54px;
+            &.bx-next {right: 0;
                 &:after {@include arrow("\e940", 40px);}
             }
         }

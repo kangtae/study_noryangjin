@@ -1,4 +1,6 @@
 @charset "UTF-8";
+body { min-width: 1200px; }
+
 .header .header_top { background: #000; padding: 7px 0; }
 
 .header .header_top:after { content: ""; display: block; clear: both; }
@@ -79,7 +81,7 @@
 /* 서브배너1 */
 .best_seller { margin-top: 140px; }
 
-.best_seller .mauto { width: 1200px; margin: 0 auto; position: relative; }
+.best_seller .mauto { width: 1200px; margin: 0 auto; }
 
 .best_seller .mauto > h1 { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 38px; color: #000; text-align: center; position: relative; line-height: 28px; }
 
@@ -96,6 +98,12 @@
 .best_seller .mauto .slider .banner > a .banner_txt > span { font-size: 13px; color: #585858; }
 
 .best_seller .mauto .slider .banner > a .banner_txt > p { font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 18px; color: #000; padding-top: 12px; }
+
+.best_seller .mauto .bx-controls .bx-controls-direction a.bx-prev { top: 180px; }
+
+.best_seller .mauto .bx-controls .bx-controls-direction a.bx-next { top: 180px; }
+
+.bx-wrapper { position: relative; }
 
 /* 서브배너2 */
 .md_pick { margin-top: 140px; }
@@ -133,13 +141,13 @@
 .new_item .track_slider > div { background: gray; }
 
 /* pager */
-.bx-controls .bx-controls-direction a { font-size: 0; position: absolute; top: 288px; }
+.bx-controls .bx-controls-direction a { font-size: 0; position: absolute; top: 288px; z-index: 60; }
 
-.bx-controls .bx-controls-direction a.bx-prev { left: -54px; }
+.bx-controls .bx-controls-direction a.bx-prev { left: 0; }
 
 .bx-controls .bx-controls-direction a.bx-prev:after { content: ""; font-family: "xeicon"; font-size: 40px; color: #7e7e7e; }
 
-.bx-controls .bx-controls-direction a.bx-next { right: -54px; }
+.bx-controls .bx-controls-direction a.bx-next { right: 0; }
 
 .bx-controls .bx-controls-direction a.bx-next:after { content: ""; font-family: "xeicon"; font-size: 40px; color: #7e7e7e; }
 
